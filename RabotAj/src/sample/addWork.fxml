@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #0066CC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addOfferController">
+    <children>
+        <AnchorPane layoutY="85.0" prefHeight="315.0" prefWidth="700.0" style="-fx-background-color: #CCCCCC;">
+            <children>
+                <Label layoutX="261.0" layoutY="-8.0" prefHeight="68.0" prefWidth="179.0" text="Add new offer" textFill="#0066cc">
+                    <font>
+                        <Font name="Gabriola" size="40.0" />
+                    </font>
+                </Label>
+                <Button fx:id="addButton" layoutX="569.0" layoutY="256.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #0066CC;" text="Add" textFill="#e8dfdf">
+                    <font>
+                        <Font name="Gabriola" size="23.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="price_field" layoutX="497.0" layoutY="60.0" prefHeight="33.0" prefWidth="195.0" promptText="Price" style="-fx-border-color: gray; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="headOffer_field" layoutX="21.0" layoutY="106.0" prefHeight="33.0" prefWidth="671.0" promptText="Head offer" style="-fx-border-color: gray; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+            <TextField fx:id="typeJob_field" layoutX="259.0" layoutY="60.0" prefHeight="33.0" prefWidth="233.0" promptText="Type Job" style="-fx-border-color: gray; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="city_field" layoutX="539.0" layoutY="158.0" prefHeight="33.0" prefWidth="154.0" promptText="City" style="-fx-border-color: gray; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ChoiceBox fx:id="choiceBoxVacancy" layoutX="21.0" layoutY="60.0" prefHeight="33.0" prefWidth="233.0" style="-fx-border-color: gray; -fx-border-radius: 5;" />
+            <TextArea fx:id="description_area" layoutX="21.0" layoutY="148.0" prefHeight="156.0" prefWidth="514.0" promptText="Description" style="-fx-border-color: gray; -fx-border-radius: 5;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextArea>
+            <RadioButton fx:id="radioButtonMale" layoutX="569.0" layoutY="225.0" mnemonicParsing="false" selected="true" text="Male" />
+            <RadioButton fx:id="radioButtonFemale" layoutX="569.0" layoutY="199.0" mnemonicParsing="false" text="Female" />
+            <Button fx:id="errorButton" layoutX="440.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="255.0" style="-fx-background-color: #CCCCCC;" textFill="#fbab04">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="261.0" layoutY="7.0" prefHeight="53.0" prefWidth="179.0" text="RabotAj" textFill="WHITE">
+            <font>
+                <Font name="Gabriola" size="56.0" />
+            </font>
+        </Label>
+        <Button fx:id="pressButton" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: #0066CC;" text="">
+            <graphic>
+                <ImageView fitHeight="52.0" fitWidth="54.0">
+                    <image>
+                        <Image url="@images/computer_comunication.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>
